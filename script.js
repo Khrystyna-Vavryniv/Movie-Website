@@ -21,11 +21,11 @@ arrows.forEach((arrow, i)=>{
 
 
 //Toggle
-
+const toggle = document.querySelector(".toggle");
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(".container, .movie-list-title, .navbar-container, .sidebar, .left-menu-icon, .toggle");
 
-ball.addEventListener("click", ()=>{
+toggle.addEventListener("click", ()=>{
     items.forEach(item=>{
         item.classList.toggle("active")
     })
